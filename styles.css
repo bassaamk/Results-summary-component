@@ -1,0 +1,164 @@
+:root {
+--Light-red: hsl(0, 100%, 67%)
+--Orangey-yellow: hsl(39, 100%, 56%)
+--Green-teal: hsl(166, 100%, 37%)
+--Cobalt-blue: hsl(234, 85%, 45%)
+}
+/* - Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+/* - Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0) */ *
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.container {
+    background-color:white ;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    width: 768px;
+    max-width: 100%;
+    box-shadow: 0 0 20px 0px hsl(221, 92%, 90%);
+}
+@media (max-width:767px) {
+    .box {
+        flex-direction: column;
+        margin-top: -30px;
+    }
+}
+.box .left {
+    flex:1 1 50% ;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+width: 100%;
+align-self: stretch;
+padding: 40px;
+border-radius: 40px;
+text-align: center;
+color: white;
+gap: 10px;
+} 
+
+.box .left h1 {
+    font-weight: 500;
+    color: hsla(222, 100%, 96%, 0.508);
+    font-size: 25px;
+    margin: 0;
+}
+.box .left .circal {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.left .circal h2 {
+    font-size: 70px;
+    margin: 0;
+}
+.left .circal span {
+    color:hsla(222, 100%, 96%, 0.508) ;
+
+}
+.box .right {
+    flex:1 1 50% ;
+    padding: 40px;
+    align-self: stretch;
+}
+.box .right h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.box .right .count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+
+.box .right .count p {
+    flex: 1;
+}
+.box .right .count .rate span:first-child {
+   font-weight: 700; 
+   color: hsl(224, 30%, 27%);
+}
+.box .right .count .rate span:last-child {
+   color:hsla(224, 30%, 27%, 0.50);
+   font-weight: 700; 
+}
+.count.red {
+    background-color:    hsla(0, 100%, 67%, 0.2) ;
+    
+}
+.count.red p {
+color:  hsl(0, 100%, 67%);
+
+}
+.count.yellow {
+    background-color:   hsla(39, 100%, 56%, 0.20)  ;
+    
+}
+.count.yellow  p {
+color:   hsl(39, 100%, 56%);
+
+}
+.count.green {
+    background-color:    hsla(166, 100%, 37%, 0.20) ;
+    
+}
+.count.green p {
+color:   hsl(166, 100%, 37%)
+
+}
+.count.blue {
+    background-color:    hsla(234, 85%, 45%, 0.20) ;
+    
+}
+.count.blue p {
+color:  hsl(234, 85%, 45%);
+
+}
+a {
+  width: 100%;
+  text-decoration: none;
+  background-color: hsl(224, 30%, 27%);
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 20px auto 0;  
+  color: white;
+  font-weight: 700;
+  transition: .3s;
+}
+a:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
